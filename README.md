@@ -1,6 +1,6 @@
 # TinyRTC
 
-Simple program to interface DS1307 RTC (Real Time Clock) with Arduino.
+Simple program to interface __TinyRTC (DS1307 RTC, Real Time Clock)__ with Arduino.
 
 ## Functions
   - bool __setDate__( secs, mins, hours, day, month, year, weekday )
@@ -20,7 +20,7 @@ Simple program to interface DS1307 RTC (Real Time Clock) with Arduino.
   If you want to use this code in your program, you only have to copy the functions ( *setDate()*, *getDate()*,
   *int_to_bcd()*, *bcd_to_int()* ) to your program. Also, you have to copy the "__RTC_ADDRESS__" constant.
   
-  Finally, you'll need to include '*__Wire.h__*' and initialize it ( *__Wire.begin()__* ), in the '*__setup()__*' function.
+  Finally, you'll need to include '*__Wire.h__*' and initialize it ( *Wire.begin()* ), in the '*__setup()__*' function.
   
   ( Or you can copy everything. )
   
@@ -30,4 +30,4 @@ Simple program to interface DS1307 RTC (Real Time Clock) with Arduino.
 
 ![TinyRTC Wiring](https://github.com/pirobtumen/TinyRTC/blob/master/img/TinyRTC_Wiring.jpg?raw=true)
 
-These pins (SDA,SCL) are used to communicate with Arduino throught I2C, with the 'Wire' library. [Read more](https://www.arduino.cc/en/Reference/Wire).
+These pins (SDA,SCL) are used to communicate with Arduino through I2C, with the 'Wire' library. [Read more](https://www.arduino.cc/en/Reference/Wire).
