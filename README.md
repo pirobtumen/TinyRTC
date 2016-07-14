@@ -14,16 +14,20 @@ Simple program to interface DS1307 RTC (Real Time Clock) with Arduino.
   
   The *__getDate( params )__* function returns the data throught the paramaters (they are passed by reference).
 
-  __Take a look at the code to see how it works!__
+  Take a look at the code to see how it works! :)
 
 ## External usage
-  If you want to use this code in your program, you only have to copy the functions ( *__setDate()__*, *__getDate()__*,
-  *__int_to_bcd()__*, *__bcd_to_int()__* ) to your program. Also, you have to copy the "__RTC_ADDRESS__" constant.
+  If you want to use this code in your program, you only have to copy the functions ( *setDate()*, *getDate()*,
+  *int_to_bcd()*, *bcd_to_int()* ) to your program. Also, you have to copy the "__RTC_ADDRESS__" constant.
   
   Finally, you'll need to include '*__Wire.h__*' and initialize it ( *__Wire.begin()__* ), in the '*__setup()__*' function.
   
-  __Easy!__
+  ( Or you can copy everything. )
+  
+  Easy!
 
-## Connecting it  with Arduino
+## Wiring
 
-  Soon...
+![TinyRTC Wiring](https://github.com/pirobtumen/TinyRTC/blob/master/img/TinyRTC_Wiring.jpg?raw=true)
+
+These pins (SDA,SCL) are used to communicate with Arduino throught I2C, with the 'Wire' library. [Read more](https://www.arduino.cc/en/Reference/Wire).
